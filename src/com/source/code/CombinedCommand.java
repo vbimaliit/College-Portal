@@ -1,5 +1,7 @@
 package com.source.code;
 
+import javax.validation.constraints.Size;
+
 import com.source.code.entity.Instructor;
 import com.source.code.entity.Instructor_details;
 
@@ -12,7 +14,10 @@ public class CombinedCommand {
 	public Instructor getInst() {
 		return inst;
 	}
-
+	
+//    @Size(min=2,message="size should be greater than 1")
+//	String lastname = inst.getLastname();
+	
 	public void setInst(Instructor inst) {
 		this.inst = inst;
 	}

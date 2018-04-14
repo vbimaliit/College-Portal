@@ -29,8 +29,8 @@
 			
 			
 			<br> <br>
-			<form:form action ="searchcustomer" ModelAttribute ="customername" method ="POST">
-			Search Customer <input type="text" name="customername"/>
+			<form:form action ="searchinstructor" ModelAttribute ="instructorname" method ="POST">
+			Search Customer <input type="text" name="instructorname"/>
 			<input type="submit" value ="Search" />
 			</form:form>
 			

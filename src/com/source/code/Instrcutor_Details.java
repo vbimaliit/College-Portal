@@ -17,4 +17,6 @@ public interface Instrcutor_Details {
 
 	public void deleteInstructor(int id);
 
+	public List<Instructor> searchInstructor(String searchname);
+
 }

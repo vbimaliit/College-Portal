@@ -98,6 +98,24 @@ public class Instruct_Det_imple implements Instrcutor_Details {
 		
 	}
 
+	@Override
+	@Transactional
+	public List<Instructor> searchInstructor(String searchname) {
+		// TODO Auto-generated method stub
+		
+		Session session = sessionFactory.getCurrentSession();
+		
+		Query <Instructor> query = session.createQuery("from Instructor where lower(firstname) like :thename or lower(lastname) like :thename",Instructor.class );
+		
+		query.setParameter("thename", searchname)
+;
+		List <Instructor> list = query.getResultList();
+		
+		
+		
+		return list;
+	}
+
 	
 
 
